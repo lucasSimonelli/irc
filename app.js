@@ -8,7 +8,7 @@ var serverPort = process.env.PORT || 4000;
 app.use(files.toMiddleware());
 
 app.get('/', function (req, res) {
-    res.redirect('./views/tattoos.html');
+    res.redirect('./index.html');
 });
 
 console.log('Lactate server running on port: ' + serverPort);
